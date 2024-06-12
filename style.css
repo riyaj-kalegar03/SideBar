@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main_box {
+  height: 100vh;
+  background: url(/photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#check {
+  display: none;
+}
+
+.btn_one {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  line-height: 60px;
+  font-size: 20px;
+}
+.sidebar_menu {
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  left: -300px;
+  background-color: rgba(250, 235, 215, 0.189);
+  box-shadow: 1px 1px 6px black;
+  transition: all 0.5s linear;
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  top: 10px;
+  /* left: 60px; */
+  width: 100%;
+  box-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+.sidebar_menu .logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.sidebar_menu .btn_two {
+  position: absolute;
+  top: 24px;
+  left: 265px;
+  font-size: 26px;
+}
+
+.menu {
+  position: relative;
+  top: 80px;
+  /* color: white; */
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.menu li {
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 2px 2x 6px black;
+  transition: all 0.5s linear;
+}
+.menu li:hover {
+  box-shadow: 2px 2px 5px black;
+}
+.menu li i {
+  font-size: 20px;
+  margin-left: 30px;
+  color: aliceblue;
+}
+.menu li a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+}
+.social_media {
+  position: absolute;
+  left: 10%;
+  bottom: 10px;
+}
+.social_media a {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.social_media a i:hover {
+  transform: scale(1.5);
+  transition: all 0.5s linear;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0px;
+}
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+h1 {
+  color: white;
+}
