@@ -2,6 +2,6 @@
 
 This is simple side bar using only html and css.
 
-# Not use Javascript
+# Not used Javascript
 
 In this bar javascript is not used.
